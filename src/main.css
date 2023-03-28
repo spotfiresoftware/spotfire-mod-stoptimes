@@ -1,0 +1,203 @@
+/* MAIN CONTENT */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height:100%;
+}
+body {
+    margin:0px;
+    height:100%;
+}
+
+div.content {
+    height:100%;
+}
+
+/* VISUALIZATION */
+
+div.content > div.visualization {
+    height:100%;
+}
+
+
+div.content > div.visualization.trip-stops-list {
+    display:flex;
+    flex-direction: row;
+}
+
+div.content > div.visualization div.trip-stop-graphic > div.stop {
+    height:24px;
+}
+
+div.content > div.visualization div.trip-stop-graphic > div.transition {
+    height:100px;
+}
+
+div.content > div.visualization div.trip-stop-graphic svg {
+    width:50px;
+}
+
+div.content > div.visualization div.trip-stop-graphic svg > rect{
+    x:17px;
+    y:0px;
+    width:6px;
+    height:100px;
+}
+
+div.content > div.visualization div.trip-stop-graphic svg > circle{
+    cx:20;
+    cy:12;
+    r:10;
+    stroke-width:4;
+    stroke:black;
+    fill:none;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop {
+    height:124px;
+    padding:3px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop.markable:hover {
+    cursor:pointer;
+    background-color:#EEEEEE;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop.marked:hover {
+    cursor:pointer;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.name{
+    font-size:14px;
+    padding:2px;
+    margin-bottom:2px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop.marked > div.name {
+    color:white;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times {
+    padding:2px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time{
+    display:flex;
+    flex-direction: row;
+    font-size:12px;
+    padding-bottom:3px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time.estimated{
+    font-style: italic;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time.actual{
+    font-weight: bold;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time div.value{
+    width:50px;
+    min-width:50px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time div.delta{
+    width:30px;
+    min-width:30px;
+    padding-left:5px;
+    padding-right:40px;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time div.delta.early{
+    color:darkorange;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time div.delta.ontime{
+    color:seagreen;
+}
+
+div.content > div.visualization div.trip-stop-text > div.stop > div.times > div.time div.delta.late{
+    color:red;
+}
+
+/* CONFIGURATION */
+
+div.content > div.configuration {
+    display: none;
+    flex-direction: column;
+
+    height:100%;
+    padding:5px;
+    background-color:#EEEEEE;
+}
+
+div.content > div.configuration > div.title {
+    font-size:20px;
+    font-weight:bold;
+}
+
+div.content > div.configuration > div.validation {
+    height:25px;
+    padding:5px;
+    color:white;
+}
+
+div.content > div.configuration > div.validation.ok {
+    background-color:darkgreen;
+}
+
+div.content > div.configuration > div.validation.error {
+    background-color:tomato;
+}
+
+div.content > div.configuration > div.details {
+    flex-grow: 1;
+    padding-top:5px;
+}
+
+div.content > div.configuration > div.details > textarea{
+    height:100%;
+    width:100%;
+}
+
+div.content > div.configuration > div.button {
+    padding-top:20px;
+    text-align:right;
+}
+
+div.content > div.configuration > div.button > button{
+    padding-right:10px;
+}
+
+div.content > div.no-config {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height:100%;
+    background-color:transparent;
+}
+
+div.content > div.no-config > div.title {
+    color:black;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+div.content > div.no-config > div.instruction {
+    margin-top:20px;
+    color:black;
+    font-style:italic;
+    font-size: 14px;
+}
+
+div.content > div.visualization div.mod-error {
+    width:100%;
+    text-align:center;
+    margin-top:50%;
+    vertical-align: middle;
+    user-select:none;
+}

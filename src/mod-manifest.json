@@ -1,0 +1,102 @@
+{
+    "apiVersion": "1.0",
+    "version": "1.2.0",
+    "name": "Stop Times",
+    "id": "stop-times",
+    "icon": "images/Icons-Stop_Times_24px.svg",
+    "properties": [
+        {
+            "name": "mod-config",
+            "type": "string",
+            "defaultValue": "{\n  \"delays\": {\n    \"calcEstArrDelay\":true,\n    \"calcEstDepDelay\":true,\n    \"calcActArrDelay\":true,\n    \"calcActDepDelay\":true\n},\n  \"colors\": {\n    \"pending\": \"grey\",\n    \"next\": \"darkorange\",\n    \"active\": \"darkorange\",\n    \"done\": \"dodgerblue\"\n  },\n\"stopLimit\": 25\n}"
+        }
+    ],
+    "dataViewDefinition": {
+        "axes": [
+            {
+                "name": "Name",
+                "mode": "categorical",
+                "placement": "none"
+            },
+            {
+                "name": "Sequence by",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true
+            },
+            {
+                "name": "Graphic type",
+                "mode": "categorical",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true
+            },
+            {
+                "name": "Sched Arr",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Sched Dep",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Est Arr",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Est Dep",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Act Arr",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Act Dep",
+                "mode": "continuous",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true,
+                "dataTypes": {
+                    "allowNumeric": false,
+                    "allowDateTime": true
+                }
+            },
+            {
+                "name": "Status",
+                "mode": "categorical",
+                "placement": "none",
+                "allowNonAggregatingMeasures": true
+            }
+        ]
+    },
+    "files": ["index.html", "main.css", "main.js", "viz_configuration.js"]
+}
