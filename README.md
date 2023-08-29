@@ -8,7 +8,7 @@ A graphical representation of stops for a vehicle journey with scheduled, estima
 
 [Download latest version](https://github.com/spotfiresoftware/spotfire-mod-stoptimes/releases)
 
-The [Wiki](https://github.com/spotfiresoftware/spotfire-mod-stoptimes/wiki) contains step-by-step instruction on how to install and use this Mod in TIBCO Spotfire®.
+The [Wiki](https://github.com/spotfiresoftware/spotfire-mod-stoptimes/wiki) contains step-by-step instruction on how to install and use this Mod in Spotfire®.
 
 ## Building the Project
 
